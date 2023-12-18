@@ -10,18 +10,18 @@ styleUrls: ['./app.component.css']
 })
 
 export class AppComponent implements OnInit{
-autoS: AutoSportive[];
-autoSuv: AutoSuv[];
-autoCompattes: AutoCompatte[];
-// Inject HttpClient into your component or service.
-constructor(private http: HttpClient) {}
-ngOnInit(): void {
-// Make the HTTP request:
-this.http.get('https://3000-molodduwa-tecnologie5d-bvrk3sg0g46.ws-eu106.gitpod.io/api').subscribe(data => {
-// Read the result field from the JSON response.
-this.autoS = data["Auto Sportive"];
-this.autoSuv = data["Auto SUV"];
-this.autoCompattes=data["Auto Compatte"];
-});
-}
+    autoS: AutoSportive[];
+    autoSuv: AutoSuv[];
+    autoCompattes: AutoCompatte[];
+    // Inject HttpClient into your component or service.
+    constructor(private http: HttpClient) {}
+    ngOnInit(): void {
+    // Make the HTTP request:
+    this.http.get('https://3000-molodduwa-tecnologie5d-qi7mp0ziijy.ws-eu107.gitpod.io/api').subscribe(data => {
+    // Read the result field from the JSON response.
+    this.autoS = data["Auto Sportive"];
+    this.autoSuv = data["Auto SUV"];
+    this.autoCompattes=data["Auto Compatte"];
+    });
+    }
 }
